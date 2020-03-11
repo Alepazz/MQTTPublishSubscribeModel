@@ -43,9 +43,11 @@ Classe che funge da model per comporre un messaggio. Tra i vari parametri trovia
 Se il primo metodo permette di pubblicare un messaggio presso un contenuto, tale metodo permette di sottoscriversi a tale contenuto. L'unico parametro, infatti, di tipo String, è il topic presso cui sottoiscriversi. La sottoscrizione si avvale di _Model.MqttCallbackModel_ che fornisce un metodo che verrà invocato in callback
 
 **Mqtt.kt**
+
 Tale classe permette di definire un'istanza MQTT, settata per dialogare con uno specifico Server, evidenziato dai parametri passati al costruttore della vera e propria connessione MQTT messa a disposizione dalla libreria _org.eclipse.paho.client.mqttv3.MqttClient_
 
 **MqttCallbackModel.kt**
+
 In tale classe, la quale estende MqttCallback, abbiamo l'implementazione del metodo specificato sopra: 
 
 --> override fun messageArrived(p0: String?, p1: MqttMessage?)
