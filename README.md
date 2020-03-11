@@ -20,7 +20,7 @@ informazioni per uno specifico topic. Da quello appreso poco sopra, sarà dunque
 pubblicare del contenuto e quale è tale contenuto.
 Richiamando il controller nel seguente modo, è possibile quindi inviare il messaggio al Server designato che si occuperà di 
 inoltrare il messaggio a tutti gli utenti sottoscritti a quel topic: _mqttController.publishMessage(messagePublishModel)_.\
-**messagePublishModel** è dunque il modello di cui il punto 4, ovvero ciò che serve come parametro al metodo di pubblicazione del controller.\
+**messagePublishModel** è dunque il modello di cui il punto 4, ovvero ciò che serve come parametro al metodo di pubblicazione del controller.
 
 La configurazione del Server a cui vengono inoltrate le richieste avviene nel file _Mqtt.kt_ presente nel Model, in cui dobbiamo specificare IP:PORT.
 
